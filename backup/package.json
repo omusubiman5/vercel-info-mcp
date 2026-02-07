@@ -1,0 +1,26 @@
+{
+    "name": "vercel-info-mcp",
+    "version": "1.0.0",
+    "description": "MCP server for accessing Vercel status, blog posts, and customer cases",
+    "type": "module",
+    "bin": {
+        "vercel-info-mcp": "./build/index.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "prepare": "npm run build",
+        "watch": "tsc --watch"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.4",
+        "cheerio": "^1.0.0",
+        "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "typescript": "^5.7.2"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
